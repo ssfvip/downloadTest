@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ssf.downloadtest.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <com.example.ssf.downloadtest.DownloadPercentView
+        android:id="@+id/downloadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:notBeginImg="@drawable/ic_no_download"
+        custom:waitImg="@drawable/ic_wait"
+        custom:pausedImg="@drawable/ic_pause"
+        custom:finishedImg="@drawable/ic_finished"
+        custom:strokeWidth="20dp"
+        custom:circleColor="#bdbdbd"
+        custom:radius="100dp"
+        custom:ringColor="#52ce90"/>
+    </RelativeLayout>
+</FrameLayout>
